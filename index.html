@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1 class="display-2">Netlify Form</h1>
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-group">
+        <label type="email" name="email" for="exampleInputEmail1"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="example@example.com"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea
+          class="form-control"
+          name="message"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Your message here..."
+        ></textarea>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Tick me</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
